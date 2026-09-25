@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script  src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="icon" href="media/favicon.ico">
+  
+  <body>
+
+   <div id="outsideDiv">
+  
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="media.html">Audio/Video</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" >Home</a>
+    <a href="media.html">Audio/Video</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="mySpan">&#9776; </span>
+  </div>
+<h1 class="headerClass1"> Contact Thorn Duo</h1>
+ <!-- <p> treya.nash1[at]gmail.com</p> -->
+ <!-- <a href="https://www.youtube.com/@treyanash8745" class="fa fa-youtube"></a> -->
+ <div class="container">
+  <form action="https://formspree.io/f/moevwbpw" method="POST" id="testformid">
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name">
+    
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject of message" />
+
+    <label for="taid">Message</label>
+    <!-- <input type="text" id="subject" > <textarea></textarea> -->
+    <!-- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+    <textarea form ="testformid" name="taname" id="taid" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" id="mySubmit">
+
+
+  </form>
+</div>
+
+
+</div>
+     <style> 
+    /* body {
+      font-family: Verdana
+    } */
+    /* Add a black background color to the top navigation */
+
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+  color: white;
+}
+.container {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#taid {
+  font-family: inherit;
+  font-size: 1em
+}
+#fname {
+  font-family: inherit;
+}
+#subject {
+  font-family: inherit;
+}
+#lname {
+  font-family: inherit;
+}
+#mySubmit {
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  background-color:black;
+  font-size: 1em;
+}
+
+  
+
+
+  </style>
+
+  </body>
+  </head>
+  </html>

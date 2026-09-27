@@ -11,14 +11,14 @@
 
 
   <body>
-
+  <h2 id="websiteName">Thorn Duo</h2>
 <div id="outsideDiv">
-  
   <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
     <a href="media.html">Media</a>
     <a href="contact.html">Contact</a>
   </div>
+
 
   
   <div id="mySidenav" class="sidenav">
@@ -50,6 +50,19 @@
 
 
 </style>
+
+<script>
+
+let leftDiv1 = document.getElementById("leftDiv1")
+  
+
+ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+  leftDiv1.style.width = "100dvw";
+ leftDiv1.style.padding = "10px"
+ }
+
+</script>
 
 
   </body>

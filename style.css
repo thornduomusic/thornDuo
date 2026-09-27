@@ -391,4 +391,22 @@ a:hover {
   #e {order: 5;}
   #f {order: 6;}
 
+  #websiteName {
+  
+  position: absolute;
+  width: 50%;
+  left: 45%;
+  text-align: right;
+  z-index: 99;
+  display: none;
+}
+
+}
+
+#websiteName {
+  position: absolute;
+  width: 50%;
+  left: 45%;
+  text-align: right;
+  z-index: 99;
 }

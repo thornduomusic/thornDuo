@@ -1,6 +1,8 @@
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+
+
 let x = document.getElementById("myTopnav");
 let y = document.querySelector(".sidenav")
 
@@ -13,8 +15,13 @@ function myFunction() {
     }
   }
 
-let main = document.getElementById("main")
+let main = document.getElementById("main");
+
+
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  console.log("hello")
+    // some code.. 
+
 if (x) {
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
   x.style.visibility = "hidden";
@@ -22,7 +29,7 @@ if (x) {
   main.style.visibility = "visible";
 
   //  document.createElement("p");
-  // some code.. 
+
 }
   } else {
     if (x) {
@@ -34,13 +41,18 @@ if (x) {
   }
 
   function openNav() {
+
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main").style.visibility = "hidden";
+    // document.getElementById("leftDiv1").style.position = "fixed"
+    
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+   document.getElementById("main").style.visibility = "visible";
   }
 
 

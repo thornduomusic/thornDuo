@@ -72,3 +72,18 @@ if (x) {
     }
   }
 
+  let imgNum = 0;
+
+  document.getElementById("bioImg").addEventListener("mouseover", () => {
+    if (imgNum == 0) {
+    document.getElementById("bioImg").src = "media/3.png"
+      imgNum = 1;
+    } else if (imgNum == 1) {
+      document.getElementById("bioImg").src = "media/1.png"
+      imgNum = 0;
+    }
+  })
+
+  document.getElementById("bioImg").addEventListener("mouseout", () => {
+    document.getElementById("bioImg").src = "media/2.png"
+  })

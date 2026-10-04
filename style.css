@@ -302,12 +302,22 @@ a {
 
 
 #leftDiv1 {
-  width: 50%;
+  width: 45%;
   padding: 0px 0px 0 20px;
+  font-size: 1.2rem
+
 }
 
 #leftDiv2 {
-  width: 50%;
+  width: 40%;
+}
+
+img {
+width: 100%;
+position: relative;
+left: 20%;
+top: 10%;
+min-width: 300px;
 }
 
 .column_1 {
@@ -368,7 +378,6 @@ a:hover {
 
 @media screen and (max-width: 800px) {
   .topnav {
-
     display: none
   }
 
@@ -381,8 +390,6 @@ a:hover {
     width: 100%;
   }
 
-
-
   #a {order: 1; }
   #b {order: 3; }
   #c {order: 4; }
@@ -391,14 +398,32 @@ a:hover {
   #e {order: 5;}
   #f {order: 6;}
 
-  #websiteName {
+#websiteName {
   
-  position: absolute;
-  width: 50%;
-  left: 45%;
-  text-align: right;
-  z-index: 99;
-  display: none;
+    position: absolute;
+    width: 50%;
+    left: 45%;
+    text-align: right;
+    z-index: 99;
+    display: none;
+
+}
+
+#leftDiv1, #leftDiv2 {
+  width: 100%;
+}
+
+#leftDiv1 {order: 2;
+  margin-top: 10%;
+
+}
+
+img {
+width: 100%;
+position: relative;
+left: 0%;
+top: 10%;
+min-width: 300px;
 }
 
 }
